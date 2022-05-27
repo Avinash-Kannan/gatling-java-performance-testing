@@ -1,18 +1,17 @@
-Gatling plugin for Maven - Java demo project
-============================================
+**Load testing for eCommerce Site using Gatling Java**
+==============================================
 
-A simple showcase of a Maven project using the Gatling plugin for Maven. Refer to the plugin documentation
-[on the Gatling website](https://gatling.io/docs/current/extensions/maven_plugin/) for usage.
+## **Gatling Installation** :
+1. [Standalone version](https://gatling.io/open-source/)
+2. [Maven Java Build Tool](https://github.com/gatling/gatling-maven-plugin-demo-java)
+3. [Gradle Java Build Tool](https://github.com/gatling/gatling-gradle-plugin-demo-java)
 
-This project is written in Java, others are available for [Kotlin](https://github.com/gatling/gatling-maven-plugin-demo-kotlin)
-and [Scala](https://github.com/gatling/gatling-maven-plugin-demo-scala).
 
-It includes:
 
-* [Maven Wrapper](https://maven.apache.org/wrapper/), so that you can immediately run Maven with `./mvnw` without having
-  to install it on your computer
-* minimal `pom.xml`
-* latest version of `io.gatling:gatling-maven-plugin` applied
-* sample [Simulation](https://gatling.io/docs/gatling/reference/current/general/concepts/#simulation) class,
-  demonstrating sufficient Gatling functionality
-* proper source file layout
+## **Gatling Recorder** :
+- By Running command `./recorder.sh` (mac OS)  from Standalone version `/bin` folder
+- From IDE, Running `Recorder.java` class
+
+## **Execute Gatling scrips** :
+- Run command ` mvn gatling:test -DUSERS=5 -DRAMP_DURATION=10 ` 
+- From IDE , Run `Engine.java` class
